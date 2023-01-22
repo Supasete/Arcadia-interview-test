@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230117 17:14:40.166" rpa="false" schemaversion="3">
+<suite id="s1" name="Assignment 2.0" source="C:\Users\Win 10 Pro\Desktop\TEST\Assignment_2.0.robot">
+<test id="s1-t1" name="Google search &quot;Ladkrabang University&quot; &amp; Click link No.5" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.co.th/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230117 17:14:40.258" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.th/'.</msg>
+<status status="PASS" starttime="20230117 17:14:40.257" endtime="20230117 17:14:42.197"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class='gLFyf']</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230117 17:14:42.197" endtime="20230117 17:14:42.211"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@class='gLFyf']</arg>
+<arg>ladkrabang university</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230117 17:14:42.211" level="INFO">Typing text 'ladkrabang university' into text field '//*[@class='gLFyf']'.</msg>
+<status status="PASS" starttime="20230117 17:14:42.211" endtime="20230117 17:14:42.269"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20230117 17:14:42.270" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20230117 17:14:42.270" endtime="20230117 17:14:44.126"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>//*[@class='SPZz6b']/h2</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230117 17:14:44.142" level="INFO">${TEXT} = สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</msg>
+<status status="PASS" starttime="20230117 17:14:44.127" endtime="20230117 17:14:44.142"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${TEXT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230117 17:14:44.142" endtime="20230117 17:14:44.143"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//*[@class='SPZz6b']/h2</arg>
+<arg>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230117 17:14:44.143" level="INFO">Verifying element '//*[@class='SPZz6b']/h2' contains exact text 'สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง'.</msg>
+<status status="PASS" starttime="20230117 17:14:44.143" endtime="20230117 17:14:44.150"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="rso"]/div[5]/div/div/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230117 17:14:44.150" level="INFO">Clicking element '//*[@id="rso"]/div[5]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20230117 17:14:44.150" endtime="20230117 17:14:44.190"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230117 17:14:44.191" endtime="20230117 17:14:46.292"/>
+</kw>
+<doc>This test case verifies that user is able to successfully search Ladkrabang University &amp; click link No.5</doc>
+<status status="PASS" starttime="20230117 17:14:40.257" endtime="20230117 17:14:46.293"/>
+</test>
+<status status="PASS" starttime="20230117 17:14:40.166" endtime="20230117 17:14:46.294"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment 2.0">Assignment 2.0</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
